@@ -32,7 +32,7 @@ public class NeoService implements CommandLineRunner {
       Neo bigNeo = neoMap.get(neoMap.keySet().stream().reduce((first, second) -> second).get());
 
       logger.info(System.lineSeparator() + System.lineSeparator() + " #### Small NEO ### " + System.lineSeparator() + smallNeo.toString() + System.lineSeparator());
-      logger.info(" #### Big NEO ### \n" + bigNeo.toString() + System.lineSeparator());
+      logger.info(System.lineSeparator() + System.lineSeparator() + " #### Big NEO ### " + System.lineSeparator() + bigNeo.toString() + System.lineSeparator());
 
       Neo caEarth = NeoUtils.getNeoIdFarFromEarth(neoMap);
       logger
