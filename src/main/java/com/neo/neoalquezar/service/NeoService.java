@@ -24,7 +24,7 @@ public class NeoService implements CommandLineRunner {
 
       NeoData neoData = getNeoList();
       logger.info("Total number of NEOs: " + neoData.getPage().getTotalElements());
-      logger.info("Total number of NEOs Today: " + neoData.getPage().getSize());
+      logger.info("Total number of NEOs being analyzed: " + neoData.getPage().getSize());
 
       LinkedHashMap<String, Neo> neoMap = NeoUtils.getNeoSortedByDiameter(neoData);
 

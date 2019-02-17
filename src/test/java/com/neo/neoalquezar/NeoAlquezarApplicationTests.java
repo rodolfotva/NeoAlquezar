@@ -1,4 +1,4 @@
-package com.neo.NeoAlquezar;
+package com.neo.neoalquezar;
 
 import static org.junit.Assert.assertThat;
 
